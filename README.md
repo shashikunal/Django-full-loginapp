@@ -38,13 +38,13 @@ databasename , database username , and database password in settings.py
 <strong>Config Mail configaration : <br /></strong>
 gmail username and password in settings.py
 
-migrate database in terminal:
+<strong>migrate database in terminal:<br></strong>
 python manage.py migrate
 
-create admin user in shell:
+<strong>create admin user in shell:<br></strong>
 python manage.py createsuperuser
 
-finally run server
+<strong>finally run server<br></strong>
 python manage.py runserver
 
 
