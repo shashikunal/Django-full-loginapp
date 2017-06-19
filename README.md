@@ -4,16 +4,16 @@ Its based on  django-registration Login App with Profile integration
 
 Installation
 
-virtualenv justtest
+virtualenv justtest<br>
 activate virualenv :<br>
 source justtest/bin/activate<br>
 
-After activate virtualenv install modules :
+After activate virtualenv install modules :<br>
 
-Download sourcecode form github https://github.com/shashikunal/Django-full-loginapp.git
-After just change directory to whatever downloaded from github.
+Download sourcecode form github https://github.com/shashikunal/Django-full-loginapp.git<br>
+After just change directory to whatever downloaded from github.<br>
 
-Then install these modules:
+Then install these modules:<br>
 
 pip install django<br>
 pip install django-bootstrap-form<br>
