@@ -4,12 +4,11 @@ Its based on  django-registration Login App with Profile integration
 
 Installation
 
-create virtualenv:<br> 
 virtualenv justtest
-
 activate virualenv :<br>
 source justtest/bin/activate<br>
-after activate virtualenv install modules :
+
+After activate virtualenv install modules :
 
 Download sourcecode form github https://github.com/shashikunal/Django-full-loginapp.git
 After just change directory to whatever downloaded from github.
