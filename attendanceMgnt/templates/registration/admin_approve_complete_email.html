@@ -1,0 +1,28 @@
+{% load i18n %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>admin approval</title>
+</head>
+
+<body>
+
+
+{% block body %}
+
+<div class="container main-block">
+	<h1>Admin approval</h1>
+	<p class='text-success'>
+    {% blocktrans %}
+    Your account is now approved. You can 
+    {% endblocktrans %}
+    <a href="http://{{site.domain}}{% url 'login' %}">{% trans "log in." %}</a>
+</p>
+</div>	
+
+{% endblock %}
+
+</body>
+
+</html>

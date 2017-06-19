@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% load i18n %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+</head>
+<body>
+
+{% block body %}
+
+<div class="container main-block">
+	<div class='col-xs-4 col-xs-offset-4'>
+    <h1>login</h1>
+    <form method='post'>
+        {% csrf_token %}
+        {{ form|bootstrap}} 
+    <button type='submit' class="btn btn-info">Login</button>
+    </form>
+    
+<p>Forgot your password?
+<a href="{% url 'auth_password_reset' %}">Reset it</a>.
+</p>
+
+<p>Not a member <a href="{% url 'registration_register' %}">Register</a></p>
+    
+{% endblock %}
+</div>
+</div>
+
+
+</body>
+</html>

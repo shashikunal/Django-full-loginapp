@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+
+{% block body %}
+
+<div class="container main-block">
+<div class='col-xs-4 col-xs-offset-4'>
+	<h1>Register</h1>
+	<form method='post' class='register-block'>
+		{% csrf_token %}
+		{{ form|bootstrap }}	
+	<button type='submit' class="btn btn-info">Register</button>
+	<p>Already Registered? <a href='/accounts/login'>Login Here</a>
+	</form>
+{% endblock %}
+	
+</div>
+</div>
+
+
+</body>
+</html>

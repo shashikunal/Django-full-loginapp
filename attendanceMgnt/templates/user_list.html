@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+ {% block head %}
+ {% endblock %}
+
+</head>
+<body>
+{% block body %}
+<div class="container main-block">
+	<h1>Home Page</h1>
+	<a href="{% url 'export_users_csv' %}">Export all users</a>
+
+ <form method="get">
+    {{ filter.form.as_p }}
+    <button type="submit">Search</button>
+  </form>
+  <ul>
+  {% for user in filter.qs %}
+    <li>{{ userprofile.date }}</li>
+  {% endfor %}
+  </ul>
+
+
+
+  <form action="." enctype="db_personal/x-www-form-urlencoded" method="POST">
+    <ul>
+        {{ form.as_ul }}
+        {{form.dob}}
+{{form.dob.error}}
+    </ul>
+    {% csrf_token %}
+    <button type="submit">Search</button>
+    <br> 
+    <hr>
+    {% if contracts %}
+    <table border ="1" cellspacing="0">
+        <th>Person</th>
+        <th>Contract type</th>
+        <th>Starting date</th>
+        <th>Ending date</th>
+        {% for contract in contracts %}
+        <tr>
+            <td>{{ contract.person }}</td>
+            <td>{{ contract.type_contract }}</td>
+            <td>{{ contract.starting_date }}</td>
+            <td>{{ contract.ending_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</form>
+
+{% if download_form %}
+<form action="{% url 'download_data' %}"  method="POST">
+    {% csrf_token %}
+    {{ download_form.as_p }}
+    <p>
+        <input type="submit" class="btn" name="submit" value="Download" />
+    </p>
+</form>
+{% endif %}
+
+
+	
+</div>
+
+
+
+
+
+{% endblock %}
+
+</body>
+</html>

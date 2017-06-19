@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+</head>
+<body>
+
+{% block body %}
+
+<div class="container main-block">
+	<h1 class='profile-Heading'>Profile</h1>
+ <div class="row">
+    <div class="col-sm-3" style="border-right:1px solid #eee; height: 100%;">
+    	<h3>Empolyee Photo</h3>
+    	 {% if user.userprofile.image %}
+    	<img class="img-rounded" alt="{{user}}"  width="200" height="200" src="{{user.userprofile.image.url}}" />
+    	{% endif %}
+    </div>
+    <div class="col-sm-9 Empolyee-details">
+    	<h3>Empolyee Details</h3>
+    	<p><span class='label'>Username :</span>{{user}}</p>
+        <p><span class='label'>FullName :</span>{{user.first_name}}<span>{{user.last_name}}</span></p>
+        <p><span class='label'>Email :</span>{{user.email}}</p>
+        <p><span class='label'>Description :</span>{{user.userprofile.description}}</p>
+        <p><span class='label'>City:</span>{{user.userprofile.city}}</p>
+        <p><span class='label'>Phone Number:</span>{{user.userprofile.phone}}</p>
+        <p><span class="label">Website :</span>{{user.userprofile.Website}}</p>
+        <p><span class='label'>UID : </span>{{user.userprofile.uid}}</p>
+    </div>
+  
+  </div>
+
+{% endblock %}
+	
+</div>
+</body>
+</html>

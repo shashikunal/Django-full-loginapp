@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resend Activation Email</title>
+</head>
+<body>
+
+{% block body %}
+<div class="container main-block">
+<div class='col-xs-4 col-xs-offset-4'>
+	<h1>Resend Activation Email</h1>
+	<form method='post'>
+		{% csrf_token %}
+		{{ form|bootstrap}}	
+	<button type='submit' class="btn btn-info">Submit</button>
+	</form>
+{% endblock %}
+	
+</div>
+</div>
+
+</body>
+</html>
