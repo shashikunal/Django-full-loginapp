@@ -4,7 +4,7 @@ Its based on  django-registration Login App with Profile integration
 
 Installation
 
-create virtualenv: 
+create virtualenv:<br> 
 virtualenv justtest
 
 activate virualenv :<br>
