@@ -8,12 +8,12 @@ virtualenv justtest<br>
 activate virualenv :<br>
 source justtest/bin/activate<br>
 
-<strong>After activate virtualenv install modules :<br></strong>
+<strong>Activate virtualenv install modules :<br></strong>
 
 Download sourcecode form github https://github.com/shashikunal/Django-full-loginapp.git<br>
 After just change directory to whatever downloaded from github.<br>
 
-<strong>Then install these modules:<br></strong>
+<strong>Install these modules:<br></strong>
 
 pip install django<br>
 pip install django-bootstrap-form<br>
@@ -27,21 +27,17 @@ pip install json<br>
 pip install receiver<br>
 pip install send_mail<br>
 pip install datetime<br>
-
-<strong>After Pip Installation</strong> 
-
-<strong>config database:<br></strong>
-databasename , database username , and database password in settings.py
  
-<strong>after database settings </strong>
-
+<strong>Config database:<br></strong>
+database name , database username , and database password in settings.py
+ 
 <strong>Config Mail configaration : <br /></strong>
 gmail username and password in settings.py
 
-<strong>migrate database in shell:<br></strong>
+<strong>Migrate database in shell:<br></strong>
 python manage.py migrate
 
-<strong>create admin user in shell:<br></strong>
+<strong>Create admin user in shell:<br></strong>
 python manage.py createsuperuser
 
 <strong>finally run server<br></strong>
