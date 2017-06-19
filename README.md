@@ -7,8 +7,8 @@ Installation
 create virtualenv: 
 virtualenv justtest
 
-activate virualenv :
-source justtest/bin/activate
+activate virualenv :<br>
+source justtest/bin/activate<br>
 after activate virtualenv install modules :
 
 Download sourcecode form github https://github.com/shashikunal/Django-full-loginapp.git
