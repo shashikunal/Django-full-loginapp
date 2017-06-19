@@ -16,7 +16,7 @@ After just change directory to whatever downloaded from github.
 
 Then install these modules:
 
-pip install django
+pip install django<br>
 pip install django-bootstrap-form
 pip install django-registration
 pip install django-cors-headers
