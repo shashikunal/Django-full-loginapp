@@ -17,17 +17,17 @@ After just change directory to whatever downloaded from github.
 Then install these modules:
 
 pip install django<br>
-pip install django-bootstrap-form
-pip install django-registration
-pip install django-cors-headers
-pip install djangorestframework
-pip install django-filter
-pip install MySQL-python
-pip install requests
-pip install json
-pip install receiver
-pip install send_mail
-pip install datetime
+pip install django-bootstrap-form<br>
+pip install django-registration<br>
+pip install django-cors-headers<br>
+pip install djangorestframework<br>
+pip install django-filter<br>
+pip install MySQL-python<br>
+pip install requests<br>
+pip install json<br>
+pip install receiver<br>
+pip install send_mail<br>
+pip install datetime<br>
 
 After Pip Installation 
 
